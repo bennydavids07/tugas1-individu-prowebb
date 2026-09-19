@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 3</title>
+</head>
+<body>
+
+    <h2>Kalkulator</h2>
+
+    <p>
+        Input Bilangan 1:
+        <input type="number" id="angka1">
+    </p>
+
+    <p>
+        Input Bilangan 2:
+        <input type="number" id="angka2">
+    </p>
+
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">×</button>
+    <button onclick="hitung('/')">/</button>
+
+    <p>
+        Output:
+        <input type="text" id="output">
+    </p>
+
+    <script>
+        function hitung(operator) {
+            var angka1 = Number(document.getElementById("angka1").value);
+            var angka2 = Number(document.getElementById("angka2").value);
+            var hasil;
+
+            if (operator == "+") {
+                hasil = angka1 + angka2;
+            } else if (operator == "-") {
+                hasil = angka1 - angka2;
+            } else if (operator == "*") {
+                hasil = angka1 * angka2;
+            } else {
+                hasil = angka1 / angka2;
+            }
+
+            document.getElementById("output").value = hasil;
+        }
+    </script>
+
+</body>
+</html>
