@@ -1,0 +1,76 @@
+/* Custom Stylesheet untuk Proweb */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    font-style: italic;
+    color: #e07a5f !important;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555555;
+}
+
+.nav-link:hover {
+    color: #2ec4b6;
+}
+
+/* Custom Buttons */
+.btn-custom-green {
+    background-color: #2ec4b6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-green:hover {
+    background-color: #27a99d;
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    border-color: #2ec4b6;
+    color: #2ec4b6;
+    font-weight: 500;
+}
+
+.btn-outline-custom:hover {
+    background-color: #2ec4b6;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card Section */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
